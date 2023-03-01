@@ -32,36 +32,36 @@
         Kalkultor walut
     </h1>
 
-        <form class="js-form container">
+    <form class="js-form container">
 
-            <fieldset class="form__fieldset">
-                <legend class="form__legend">Przelicz walutę</legend>
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Przelicz walutę</legend>
+            <label>
+                <span class="form__labelText">Waluta*:</span>
+                <select class="js-select">
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CNY">CNY</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            </label>
+
+            <p>
                 <label>
-                    <span class="form__labelText">Waluta*:</span>
-                    <select class="js-select">
-                        <option value="EUR">EUR</option>
-                        <option value="USD">USD</option>
-                        <option value="GBP">GBP</option>
-                        <option value="CNY">CNY</option>
-                        <option value="JPY">JPY</option>
-                    </select>
+                    <span class="form__labelText">Kwota w PLN:</span>
+                    <input class="js-amount" type="number" min="0" step="any" placeholder="1" required autofocus>
                 </label>
+            </p>
+        </fieldset>
 
-                <p>
-                    <label>
-                        <span class="form__labelText">Kwota w PLN:</span>
-                        <input class="js-amount" type="number" min="0" step="any" placeholder="1" required autofocus>
-                    </label>
-                </p>
-            </fieldset>
+        <span>
+            <button class="js-submit form__buttonSubmit">Przelicz</button>
+            <button class="js-reset form__buttonReset" type="reset">Wyczyść</button>
+        </span>
+    </form>
 
-            <span>
-                <button class="js-submit form__buttonSubmit">Przelicz</button>
-                <button class="js-reset form__buttonReset" type="reset">Wyczyść</button>
-            </span>
-        </form>
-
-     <p class="resultText">Kwota wynosi: &nbsp<strong class="js-sum">N/A</strong></p>
+    <p class="resultText">Kwota wynosi: &nbsp<strong class="js-sum">N/A</strong></p>
 
 </body>
 
