@@ -12,6 +12,7 @@
 
 .form__buttonReset:hover{
     background-color: hsl(180, 100%, 30%);
+    cursor: pointer;
 }
 
 .form__buttonReset:active{
