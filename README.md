@@ -12,4 +12,5 @@ https://przemyslaw-nielepkowicz.github.io/currency/
 - JavaScript
 
 (Took me longer than it should have, but somehow it works.)
+
 ![Code Learning](https://media.tenor.com/-kZOB16tELEAAAAC/this-is-fine-fire.gif)
