@@ -10,4 +10,4 @@ https://przemyslaw-nielepkowicz.github.io/currency/
 - CSS
 - JavaScript
 
-![Code Learning](https://tenor.com/pl/view/this-is-fine-fire-house-burning-okay-gif-5263684)
+![Code Learning](https://media.tenor.com/-kZOB16tELEAAAAC/this-is-fine-fire.gif)
