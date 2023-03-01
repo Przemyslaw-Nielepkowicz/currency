@@ -1,0 +1,20 @@
+.form__buttonSubmit{
+    max-width: 600px;
+    width: 49%;
+    margin: 10px auto;
+    margin-left: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    display:inline-block;
+    color: white;
+    background-color: teal;
+}
+
+.form__buttonSubmit:hover{
+    background-color: hsl(180, 100%, 30%);
+}
+
+.form__buttonSubmit:active{
+    background-color: hsl(180, 100%, 40%);
+}

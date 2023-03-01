@@ -1,0 +1,11 @@
+.form__legend{
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px auto;
+
+}

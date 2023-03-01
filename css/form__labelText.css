@@ -1,0 +1,7 @@
+.form__labelText {
+    max-width: 300px;
+    width: 20%;
+    display: inline-block;
+    margin-right: 5px;
+
+}

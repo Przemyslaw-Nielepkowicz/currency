@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/form__parafgraphSum.css" rel="stylesheet">
+    <link href="css/form__buttonSubmit.css" rel="stylesheet">
+    <link href="css/form__buttonReset.css" rel="stylesheet">
+    <link href="css/form__legend.css" rel="stylesheet">
+    <link href="css/form__labelText.css" rel="stylesheet">
+    <link href="css/form__fieldset.css" rel="stylesheet">
+    <title>Currency JS</title>
+</head>
+
+<body class="body">
+
+    <h1 class="header">
+        Kalkultor walut
+    </h1>
+
+    <div class="container">
+        <form class="js-form">
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Przelicz walutę</legend>
+                <label>
+                    <span class="form__labelText">Waluta*:</span>
+                    <select class="js-select">
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="CNY">CNY</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+                </label>
+
+                <p>
+                    <label>
+                        <span class="form__labelText">Kwota w PLN:</span>
+                        <input class="js-amount" type="number" min="0" step="any" placeholder="1" required>
+                    </label>
+                </p>
+            </fieldset>
+
+            <span>
+                <button class="js-submit form__buttonSubmit">Przelicz</button>
+                <button class="js-reset form__buttonReset" type="reset">Wyczyść</button>
+            </span>
+        </form>
+    </div>
+
+    <p class="form__parafgraphSum">Kwota wynosi:<strong class="js-sum">N/A</strong></p>
+
+</body>
+
+</html>

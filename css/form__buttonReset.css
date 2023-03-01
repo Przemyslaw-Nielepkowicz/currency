@@ -1,0 +1,19 @@
+.form__buttonReset{
+    max-width: 600px;
+    width: 49%;
+    margin: 10px auto;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display:inline-block;
+    background-color: teal;
+}
+
+.form__buttonReset:hover{
+    background-color: hsl(180, 100%, 30%);
+}
+
+.form__buttonReset:active{
+    background-color: hsl(180, 100%, 40%);
+}
