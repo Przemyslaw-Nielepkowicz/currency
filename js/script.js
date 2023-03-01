@@ -3,7 +3,6 @@ let amountElement = document.querySelector(".js-amount");
 let formElement = document.querySelector(".js-form");
 let sumElement = document.querySelector(".js-sum");
 
-let PLN = 1
 let EUR = 4.7245
 let USD = 4.463
 let GBP = 5.3663
@@ -48,5 +47,7 @@ formElement.addEventListener("submit", (event) => {
     sumElement.innerHTML =(`${sum.toFixed(2)} ${select}`);
 });
 
-
+sumElement.addEventListener("reset", () => {           // Why this is not working? 
+    console.log("Formularz zostal zresetowany");       // Fix it later
+});
 

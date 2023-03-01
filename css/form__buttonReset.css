@@ -1,4 +1,4 @@
-.form__buttonReset{
+.form__buttonReset {
     max-width: 600px;
     width: 49%;
     margin: 10px auto;
@@ -6,7 +6,7 @@
     border: none;
     border-radius: 5px;
     color: white;
-    display:inline-block;
+    display: inline-block;
     background-color: teal;
 }
 
