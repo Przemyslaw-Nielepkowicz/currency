@@ -14,7 +14,7 @@ formElement.addEventListener("reset", () => {
     console.log("Formularz zostal zresetowany");
 });
 
-resetElement.addEventListener("click", () => {
+resetElement.addEventListener("click", () => {      // To działa, ale czy to dobry pomysł?
     sumElement.innerText = "N/A";                        
 });
 
