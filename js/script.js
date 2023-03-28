@@ -1,51 +1,61 @@
-let currencyElement = document.querySelector(".js-select");
-let amountElement = document.querySelector(".js-amount");
-let formElement = document.querySelector(".js-form");
-let sumElement = document.querySelector(".js-sum");
-let resetElement = document.querySelector(".js-reset")
-
-let EUR = 4.7245;
-let USD = 4.463;
-let GBP = 5.3663;
-let CNY = 0.6433;
-let JPY = 0.033;
-
-formElement.addEventListener("reset", () => {
-    console.log("Formularz zostal zresetowany");
-});
-
-resetElement.addEventListener("click", () => {      // To działa, ale czy to dobry pomysł?
-    sumElement.innerText = "N/A";                        
-});
-
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    let currency = currencyElement.value;
-    let amount = +amountElement.value;
-    let sum;
+const calculateResult = (amount, currency) => {
+    const EUR = 4.7245;
+    const USD = 4.463;
+    const GBP = 5.3663;
+    const CNY = 0.6433;
+    const JPY = 0.033;
 
     switch (currency) {
-        case "EUR": 
-            sum = amount / EUR;
-            break;
+        case "EUR":
+            return amount / EUR;
 
-        case "USD": 
-            sum = amount / USD;
-            break;   
+        case "USD":
+            return amount / USD;
 
-        case "GBP": 
-            sum = amount / GBP;
-            break; 
+        case "GBP":
+            return amount / GBP;
 
-        case "CNY": 
-            sum = amount / CNY;
-            break;
+        case "CNY":
+            return amount / CNY;
 
-        case "JPY": 
-            sum = amount / JPY;
-            break;
+        case "JPY":
+            return amount / JPY;
     }
+};
 
-    sumElement.innerHTML = `${sum.toFixed(2)} ${currency}`;
-});
+const updateResultText = (result, currency) => {
+    const resultElement = document.querySelector(".js-result");
+    resultElement.innerHTML = `${result.toFixed(2)} ${currency}`;
+
+    const resetElement = document.querySelector(".js-reset");
+
+    resetElement.addEventListener("click", () => {
+        resultElement.innerText = "N/A";
+    });
+}
+
+const onFormSubmit = (event) => {
+    event.preventDefault();
+
+    const currencyElement = document.querySelector(".js-select");
+    const amountElement = document.querySelector(".js-amount");
+
+    const amount = +amountElement.value;
+    const currency = currencyElement.value;
+
+    const result = calculateResult(amount, currency);
+
+    updateResultText(result, currency);
+}
+
+const init = () => {
+    const formElement = document.querySelector(".js-form");
+
+    formElement.addEventListener("submit", onFormSubmit);
+
+    formElement.addEventListener("reset", () => {
+        console.log("Formularz zostal zresetowany");
+    });
+};
+
+init();
